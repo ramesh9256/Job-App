@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { FaMapMarkerAlt, FaHeart } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 function JobCard() {
     const sliderRef = useRef(null);
@@ -112,18 +113,18 @@ function JobCard() {
                         </div>
                         {/* Footer Section */}
                         <footer className="mt-6 flex justify-between items-center">
-                            <a
-                                href={job.applyLink}
+                            <Link
+                                to = "/apply"
                                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300"
                             >
                                 Apply Now
-                            </a>
-                            <a
-                                href={job.viewLink}
+                            </Link>
+                            <Link
+                                to = "/viewjob"
                                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 "
                             >
                                 View Job
-                            </a>
+                            </Link>
                             <button className="text-gray-500 hover:text-red-500">
                                 <FaHeart size={20} />
                             </button>

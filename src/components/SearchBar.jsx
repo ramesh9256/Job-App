@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function SearchBar() {
   const [selectedOptions, setSelectedOptions] = useState({
@@ -85,11 +86,12 @@ function SearchBar() {
       </div>
 
       {/* Search Button */}
-      <button
+      <Link
         className="bg-green-500 text-white px-6 py-2 rounded-md hover:bg-green-600 transition"
+        to="/view"
       >
         Search
-      </button>
+      </Link>
     </div>
   );
 }

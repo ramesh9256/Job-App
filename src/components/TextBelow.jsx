@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const TextBelow = () => {
   return (
@@ -32,18 +33,18 @@ const TextBelow = () => {
           </div>
         </div>
         <div className="flex justify-center mt-12 space-x-6">
-          <a
-            href="#"
+          <Link
+            to = "/apply"
             className="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-blue-700 transition"
           >
             POST A JOB
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to = "/learnmore"
             className="bg-gray-200 text-gray-700 font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-gray-300 transition"
           >
             LEARN MORE
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -80,18 +81,18 @@ const TextBelow = () => {
           </div>
         </div>
         <div className="flex justify-center mt-12 space-x-6">
-          <a
-            href="#"
+          <Link
+            to = "/apply"
             className="bg-green-600 text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-green-700 transition"
           >
             GET LISTED
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to = "/learntalent"
             className="bg-gray-200 text-gray-700 font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-gray-300 transition"
           >
             LEARN MORE
-          </a>
+          </Link>
         </div>
       </div>
     </div>

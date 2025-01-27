@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 function Company() {
   const sliderRef = useRef(null);
@@ -109,12 +110,12 @@ function Company() {
             </div>
             {/* Footer Section */}
             <footer className="mt-4 flex justify-center items-center space-x-4">
-              <a
-                href={job.applyLink}
+              <Link
+                to= "apply"
                 className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-300 w-[90%] text-center"
               >
                 Apply Now
-              </a>
+              </Link>
             </footer>
           </div>
         ))}
