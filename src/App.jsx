@@ -11,6 +11,7 @@ import View from './components/View'
 import ViewJob from './components/ViewJob'
 import PostLearn from './components/PostLearn'
 import TalentLearn from './components/TalentLearn'
+import Top from './components/Top'
 
 
 
